@@ -1,0 +1,204 @@
+:root {
+    --tosca-colour: #16C2D5;
+    --navy-colour: #10217D;
+    --dark-tosca-colour: #527C88;
+    --beige-colour: #D7BAAD;
+    --dark-blue-colour: #2E4450;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+    max-width: 1366px;
+    margin: 0;
+}
+
+/* Button */
+
+.btn {
+    padding: 16px 32px;
+    border-radius: 15px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn.dark {
+    background: var(--dark-blue-colour);
+}
+
+.btn.light {
+    background: var(--tosca-colour);
+}
+
+.btn.download-icon::after {
+    content: url("images/Download.svg");
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    transform: translateY(-50%);
+}
+
+.btn.download-icon {
+    padding-right: 60px;
+}
+
+.btn.daftar-icon::after {
+    content: url("images/signup.svg");
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    transform: translateY(-50%);
+}
+
+.btn.daftar-icon {
+    padding-right: 60px;
+}
+
+/* Header */
+header {
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 1366px;
+    height: 85px;
+    top: 0px;
+    background-color: #FFFFFF;
+    z-index: 100;
+}
+
+nav .logo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #000000;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 62px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Hero Section */
+
+.hero-section {
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-section .tulisan-banner-atas {
+    position: absolute;
+    left: 708px;
+    top: 160px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: medium;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+header form {
+    margin-right: 100px;
+    margin-top: 20px;
+    position: relative;
+}
+
+header form input {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    border-radius: 0px;
+    padding: 8px 32px;
+    border: none;
+    width: 100%;
+    color: #000000;
+}
+
+header form .search {
+    position: relative;
+    left: 425px;
+    top: 100%;
+    transform: translateY(-100%);
+    background: var(--tosca-colour);
+    border-radius: 0px;
+    padding: 5.5px 10px;
+    border: 0;
+}
+
+section {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 1366px;
+    height: 85px;
+    top: 500px;
+}
+
+section .layanan-khusus {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #000000;
+}
+
+section .penunjang-kesehatan {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #000000;
+}
+
+section ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+}
+
+section ul li a {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+}
